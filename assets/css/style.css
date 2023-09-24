@@ -9,6 +9,19 @@ body {
     scroll-behavior: smooth;
 }
 
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-pt {
+    padding-top: 60px;
+}
+
+.section-pb {
+    padding-bottom: 60px;
+}
+
 .btn {
     border-radius: 24px;
     background: #023047;
@@ -29,11 +42,7 @@ body {
     color: #FFF;
 }
 
-/* hero section start */
-.hero {
-    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
-}
-
+/* Header Section Start */
 .navbar {
     padding-top: 33px;
 }
@@ -63,20 +72,33 @@ body {
     font-weight: 700;
 }
 
-.hero-text-content h1 {
+/* Header Section End */
+
+
+/* Hero Section Start */
+.header-section {
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+}
+
+.hero-area {
+    padding-top: 150px;
+}
+
+.hero-content-box h1 {
     color: #FFF;
     font-size: 50px;
     font-weight: 900;
     line-height: 125%;
 }
 
-.hero-text-content p {
+.hero-content-box p {
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
     line-height: 200%;
 }
 
+/* Achivement Section Start */
 .achievement-card {
     position: absolute;
     min-width: 200px;
@@ -141,4 +163,6 @@ body {
     z-index: 1;
 }
 
-/* hero section end */
+/* Achivement Section End */
+
+/* Hero Section End */
