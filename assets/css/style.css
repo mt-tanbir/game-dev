@@ -1,3 +1,11 @@
+:root {
+    --orange-color: #da722c;
+    --dark-blue-color: #023047;
+    --dark-color: #070917;
+    --light-color: #e8f7fb;
+    --light-blue-color: #6f7dfb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +40,10 @@ body {
     line-height: normal;
 }
 
+.btn.light {
+    background: #DA722C;
+}
+
 .btn:hover {
     color: white;
     background: #023047;
@@ -42,9 +54,12 @@ body {
     color: #FFF;
 }
 
-/* Header Section Start */
+/* Navigation Section Start */
+
 .navbar {
-    padding-top: 33px;
+    padding-top: 8px;
+    background: #6f7dfb;
+    opacity: 0.9;
 }
 
 .navbar-brand {
@@ -72,7 +87,7 @@ body {
     font-weight: 700;
 }
 
-/* Header Section End */
+/* Navigation Section End */
 
 
 /* Hero Section Start */
@@ -81,7 +96,7 @@ header {
 }
 
 .hero-area {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .hero-content-box h1 {
@@ -97,6 +112,8 @@ header {
     font-weight: 400;
     line-height: 200%;
 }
+
+/* Hero Section End */
 
 /* Achivement Section Start */
 .achievement-card {
@@ -114,8 +131,8 @@ header {
 }
 
 .achievement-card.students-enrolled {
-    left: 49%;
-    top: 270px;
+    left: 46%;
+    top: 350px;
 }
 
 .achievement-card.overall-rating {
@@ -165,4 +182,160 @@ header {
 
 /* Achivement Section End */
 
-/* Hero Section End */
+/* Testimonial Section Start */
+
+.testimonials-section .mobile-btn {
+    display: none;
+}
+
+.testimonials-section .testimonial-card {
+    width: 442px;
+    background: #ffffff;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.testimonials-section .testimonial-card::before {
+    content: "";
+    width: 28px;
+    position: absolute;
+    height: 40px;
+    top: -40px;
+    left: 60px;
+    background: var(--dark-blue-color);
+    border-radius: 24px 24px 0 0;
+}
+
+.testimonials-section .testimonial-card:last-child::before {
+    left: 40px;
+    top: -50px;
+    border-radius: 0 0 24px 24px;
+    height: calc(100% + 90px);
+    z-index: -1;
+}
+
+.testimonials-section .testimonial-card .content {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 24px 32px;
+    background: var(--light-blue-color);
+}
+
+.testimonials-section .testimonial-card:last-child .content {
+    background: var(--orange-color);
+}
+
+.testimonials-section .testimonial-card .info h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--dark-blue-color);
+}
+
+.testimonials-section .testimonial-card .info {
+    padding: 24px 32px;
+    background: #fff;
+    border-radius: 24px;
+}
+
+.testimonials-section .testimonial-card .info p.designation {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--dark-blue-color);
+}
+
+.testimonials-section .testimonial-card img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 32px;
+    bottom: 20px;
+}
+
+.testimonials-section .testimonial-card:last-child {
+    transform: translateX(20px);
+}
+
+.testimonials-section .features {
+    margin-bottom: 30px;
+}
+
+/* Testimonial Section End */
+
+/* Course Section Start */
+
+.course-section {
+    background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+    padding: 70px 0;
+    padding-bottom: 120px;
+}
+
+.course-section h2 {
+    text-align: center;
+    color: #FFF;
+}
+
+.card img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 0px 32px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.card::after {
+    content: "";
+    height: 8px;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 0;
+    background: var(--dark-blue-color);
+    border-radius: 24px;
+}
+
+.card h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 150%;
+
+    color: var(--dark-blue-color);
+}
+
+.card .info {
+    height: 112px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .duration {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    white-space: nowrap;
+    color: var(--dark-blue-color);
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Course Section End */
