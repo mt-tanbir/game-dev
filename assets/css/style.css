@@ -58,8 +58,7 @@ body {
 
 .navbar {
     padding-top: 8px;
-    background: #6f7dfb;
-    opacity: 0.9;
+    background: cornflowerblue;
 }
 
 .navbar-brand {
@@ -106,7 +105,7 @@ header {
     line-height: 125%;
 }
 
-.hero-content-box p {
+.hero-content-box .hero-text {
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
@@ -277,7 +276,6 @@ header {
 .course-section {
     background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
     padding: 70px 0;
-    padding-bottom: 120px;
 }
 
 .course-section h2 {
@@ -348,6 +346,7 @@ header {
 
 .app-section .app-buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -439,7 +438,7 @@ footer form .submit-btn {
 
 footer .copyright {
     margin-top: 36px;
-   
+
 }
 
 /* Footer End */

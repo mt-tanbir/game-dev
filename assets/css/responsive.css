@@ -1,0 +1,131 @@
+@media (max-width: 991px) {
+    .achievement-card.students-enrolled {
+        left: 17%;
+        top: 521px;
+    }
+
+    .achievement-card.overall-rating {
+        left: 18%;
+        top: 745px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-fluid {
+        max-width: 60%;
+    }
+
+    .achievement-card.students-enrolled {
+        left: 9%;
+    }
+
+    .achievement-card.overall-rating {
+        left: 11%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .hero-content-box h1 {
+        font-size: 42px;
+    }
+
+    .achievement-card {
+        min-width: 148px;
+    }
+
+    .achievement-card .content {
+        padding: 4px 0px;
+    }
+
+    .achievement-card h3 {
+        font-size: 20px;
+    }
+
+    .achievement-card p {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .achievement-card img {
+        height: 28px;
+        margin-left: -84px;
+    }
+
+    .achievement-card.overall-rating {
+        left: 10%;
+        top: 638px;
+    }
+
+    .achievement-card.students-enrolled {
+        top: 500px;
+    }
+
+    .achievement-card .bg {
+        top: 6px;
+        left: 4px;
+    }
+
+    .testimonials-section .testimonial-card:last-child {
+        transform: translateX(0px);
+    }
+
+    .testimonials-section .testimonial-card:last-child::before {
+        left: 60px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 24px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .testimonials-section .testimonial-card {
+        width: 360px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-content-box h1 {
+        font-size: 34px;
+    }
+
+    .achievement-card.students-enrolled {
+        left: 5%;
+        top: 462px;
+    }
+
+    .achievement-card.overall-rating {
+        left: 6%;
+        top: 582px;
+    }
+
+    .achievement-card {
+        min-width: 124px;
+    }
+
+    .testimonials-section .testimonial-card {
+        width: 350px;
+    }
+
+    .course-section {
+        padding: 48px 0;
+    }
+
+    .card {
+        padding: 0px 18px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+}
